@@ -21,4 +21,10 @@ router.get('/dashcommercetest', (req, res) => {
         });
 });
 
+router.get('/', (req, res) => {
+    res.status(200).send(`
+        <h1>Funcionando!</h1>
+    `);
+});
+
 export default router;
